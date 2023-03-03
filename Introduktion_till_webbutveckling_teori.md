@@ -193,7 +193,7 @@
 #### Exempel
 
 ```
-GET https://api.com HTTP/1.1 
+POST https://api.com HTTP/1.1 
 ------------------------------------ Request line
 Host: www.test.com
 Accept: image/gif, html, */*

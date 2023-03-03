@@ -18,7 +18,7 @@ const convertGiphyResultToImageArray = (giphySearchResult = {}) => {
 /**
  * Giphy API credentials, do NOT edit.
  */
-const GIPHY_API_KEY = "dc6zaTOxFJmzC";
+const GIPHY_API_KEY = "JA9aE2aAPeQpGOphB5C2VlSpO2E0dtWM";
 const GIPHY_BASE_SEARCH_URL = "http://api.giphy.com/v1/gifs/search";
 
 /**

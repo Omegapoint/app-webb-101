@@ -1,26 +1,25 @@
 import findKey from "lodash/findKey";
-import { getGiphyKittens, getGiphyImages } from "./api";
 
 const staticSearchResult = {
-    kitten: [
-        "http://i.giphy.com/3oriO0OEd9QIDdllqo.gif",
-        "http://i.giphy.com/iNMz8LF8y3g4.gif",
-        "http://i.giphy.com/OmK8lulOMQ9XO.gif",
-        "http://i.giphy.com/11s7Ke7jcNxCHS.gif",
-        "http://i.giphy.com/IcXFEz3QvEmpG.gif",
-        "http://i.giphy.com/yFQ0ywscgobJK.gif",
-    ],
-    puppy: [
-        "http://i.giphy.com/dp7QYhsdgN2Yo.gif",
-        "http://i.giphy.com/iNMz8LF8y3g4.gif",
-        "http://i.giphy.com/cdTUkj59dLFmg.gif",
-    ],
-    bunny: [
-        "http://i.giphy.com/10xUg8DdgQSs9i.gif",
-        "http://i.giphy.com/TT86traJyZRzq.gif",
-        "http://i.giphy.com/SeM5SGt3LLKRq.gif",
-        "http://i.giphy.com/871qwDxfSemEE.gif",
-    ],
+  kitten: [
+    "http://i.giphy.com/3oriO0OEd9QIDdllqo.gif",
+    "http://i.giphy.com/iNMz8LF8y3g4.gif",
+    "http://i.giphy.com/OmK8lulOMQ9XO.gif",
+    "http://i.giphy.com/11s7Ke7jcNxCHS.gif",
+    "http://i.giphy.com/IcXFEz3QvEmpG.gif",
+    "http://i.giphy.com/yFQ0ywscgobJK.gif",
+  ],
+  puppy: [
+    "http://i.giphy.com/dp7QYhsdgN2Yo.gif",
+    "http://i.giphy.com/iNMz8LF8y3g4.gif",
+    "http://i.giphy.com/cdTUkj59dLFmg.gif",
+  ],
+  bunny: [
+    "http://i.giphy.com/10xUg8DdgQSs9i.gif",
+    "http://i.giphy.com/TT86traJyZRzq.gif",
+    "http://i.giphy.com/SeM5SGt3LLKRq.gif",
+    "http://i.giphy.com/871qwDxfSemEE.gif",
+  ],
 };
 
 /**
@@ -28,14 +27,14 @@ const staticSearchResult = {
  * @param searchResult
  */
 const handleSearchSuccess = (searchResult) => {
-    if (searchResult.length > 0) {
-        const resultNode = document.querySelector("#results");
-        resultNode.innerHTML = "";
+  if (searchResult.length > 0) {
+    const resultNode = document.querySelector("#results");
+    resultNode.innerHTML = "";
 
-        searchResult
-            .map((result) => `<li><img class='img-thumbnail' src=${result} /></li>`)
-            .forEach((result) => (resultNode.innerHTML += result));
-    }
+    searchResult
+      .map((result) => `<li><img class='img-thumbnail' src=${result} /></li>`)
+      .forEach((result) => (resultNode.innerHTML += result));
+  }
 };
 
 /**
@@ -43,8 +42,8 @@ const handleSearchSuccess = (searchResult) => {
  * @param searchResult
  */
 const handleSearchFailure = (errorMessage) => {
-    const resultNode = document.querySelector("#results");
-    resultNode.innerHTML = `<div class='error-msg'>${errorMessage}</div>`;
+  const resultNode = document.querySelector("#results");
+  resultNode.innerHTML = `<div class='error-msg'>${errorMessage}</div>`;
 };
 
 /**
@@ -54,18 +53,18 @@ const handleSearchFailure = (errorMessage) => {
  * @param event
  */
 export const search = (event) => {
-    const value = event.target.value;
+  const value = event.target.value;
 
-    if (value.length >= 3) {
-        const urlEncodedTerm = encodeURIComponent(value);
-        performSearch(urlEncodedTerm)
-            .then((searchResult) => {
-                handleSearchSuccess(searchResult);
-            })
-            .catch((err) => {
-                handleSearchFailure(err.message);
-            });
-    }
+  if (value.length >= 3) {
+    const urlEncodedTerm = encodeURIComponent(value);
+    performSearch(urlEncodedTerm)
+      .then((searchResult) => {
+        handleSearchSuccess(searchResult);
+      })
+      .catch((err) => {
+        handleSearchFailure(err.message);
+      });
+  }
 };
 
 /**
@@ -75,18 +74,18 @@ export const search = (event) => {
  * @returns {Promise}
  */
 const performSearch = (searchTerm = "") => {
-    const findKeyFromStaticSearchResult = findKey(
-        staticSearchResult,
-        (item, index) => index === searchTerm
-    );
-    // ----------------------------------------------------------
-    // since our final application uses fetch api and promises
-    // we use promises here to keep the same interface for all the helper functions
-    // ----------------------------------------------------------
-    return new Promise((resolve, reject) => {
-        if (findKeyFromStaticSearchResult) {
-            resolve(staticSearchResult[findKeyFromStaticSearchResult]);
-        }
-        resolve([]);
-    });
+  const findKeyFromStaticSearchResult = findKey(
+    staticSearchResult,
+    (item, index) => index === searchTerm
+  );
+  // ----------------------------------------------------------
+  // since our final application uses fetch api and promises
+  // we use promises here to keep the same interface for all the helper functions
+  // ----------------------------------------------------------
+  return new Promise((resolve, reject) => {
+    if (findKeyFromStaticSearchResult) {
+      resolve(staticSearchResult[findKeyFromStaticSearchResult]);
+    }
+    resolve([]);
+  });
 };

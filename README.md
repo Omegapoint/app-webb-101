@@ -29,4 +29,4 @@ Klona hem det här repot och öppna upp det i ditt favorit-kodverktyg. För varj
 
 ## Vi skapade kursen!
 
-Mathias Bergqvist, Conrad Ljungström, Robert Novo & Fredrik Stålnacke
+Mathias Bergqvist, Maryam Alizadeh, Conrad Ljungström, Robert Novo & Fredrik Stålnacke

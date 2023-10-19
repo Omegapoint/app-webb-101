@@ -24,7 +24,7 @@ Klona hem det här repot och öppna upp det i ditt favorit-kodverktyg. För varj
 ## Kursledare
 
 -   Mathias Bergqvist (mathias.bergqvist@omegapoint.se)
--   Conrad Ljungström (conrad.ljungstrom@omegapoint.se)
+-   Johan Lindholm (johan.lindholm@omegapoint.se)
 -   Maryam Alizadeh (maryam.alizadeh@omegapoint.se)
 
 ## Vi skapade kursen!

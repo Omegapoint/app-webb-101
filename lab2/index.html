@@ -135,7 +135,7 @@
                 <li>
                   Delete (or comment out) all implementations
                   <b>inside the function</b>
-                  <code>search.js -> performSearch</code>.
+                  <code>search.js -> performSearch()</code>.
                   <span class="text-muted"
                     >Only the content, not the entire function. 😛</span
                   >
@@ -151,7 +151,7 @@
                   <code>api.js</code> carefully 🧐
                 </li>
                 <li>
-                  Import the <code>getGiphyKittens</code> function from
+                  Import the <code>getGiphyKittens()</code> function from
                   <code>api.js</code> into <code>search.js</code> using the
                   preferred <strong>import</strong> syntax.
                   <span class="question"
@@ -160,7 +160,7 @@
                   >
                 </li>
                 <li>
-                  Use <code>getGiphyKittens</code> in the now empty
+                  Use <code>getGiphyKittens()</code> in the now empty
                   <code>performSearch</code>
                   function in
                   <code>search.js</code>. Try to search for kittens again.
@@ -170,7 +170,6 @@
                 </li>
                 <li>
                   What happens if you search for something else?
-                  <span class="question">Classroom question: Why?</span>
                 </li>
                 <li>
                   Now for we want to be able to search for any gif we want.
@@ -180,11 +179,10 @@
                 </li>
                 <li>
                   Open up the developer tools in your browser and find the
-                  "network" tools. Filter by images.
+                  "network" tools. Filter by images and inspect the headers and response.
                   <span class="question">
                     Classroom question: Do you see anything familiar from the
-                    theory section? Inspect the headers and response tabs in the
-                    dev tools!
+                    theory section? What is sent and received during the api requests?
                   </span>
                 </li>
               </ol>

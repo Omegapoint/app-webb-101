@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ES5",                      // Output target version of JavaScript
+      "module": "ESNext",                   // Module code generation
+      "strict": true,                       // Enable all strict type-checking options
+      "esModuleInterop": true,              // Enables emit interoperability for CommonJS and ES modules
+      "skipLibCheck": true,                 // Skip type checking of declaration files
+      "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+      "sourceMap": true                     // Generate source maps for debugging
+    },
+    "include": ["src"]                     // Specify which files to include
+  }

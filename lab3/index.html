@@ -40,14 +40,12 @@
             </div>
             <div class="panel-body">
               <ol class="instructions">
-                <li>Run <code>npm install</code></li>
+                <li>Run <code>npm install</code>.<span class="question"
+                  >Did you notice we're now installing and using TypeScript? We've leveled up a bit!</span
+                ></li>
                 <li>
                   Run <code>npm run dev</code> and navigate to
                   <a href="127.0.0.1:8080/">127.0.0.1:8080/</a>.
-                  <span class="text-muted"
-                    >We are now loading bundle.js as our
-                    <strong>only</strong> resource.</span
-                  >
                 </li>
                 <li>
                   Look at the bottom of
@@ -65,7 +63,7 @@
                   >
                 </li>
                 <li>
-                  Hmm...it seems like something is wrong with the scoreboard.
+                  Hmm...it seems like something is wrong with the scoreboard. &#128148;
                 </li>
                 <li>
                   Open up the browser developer tools and click some tiles.
@@ -75,12 +73,9 @@
                 <li>
                   Start by implementing the scoreboard logic for displaying
                   number of tiles matched by editing
-                  <code>GameManager.js</code> Also, you may want to take a look
+                  <code>GameManager.ts</code> Also, you may want to take a look
                   at the DomManager class. There may be some things you can use
-                  in there.<span class="question"
-                    >Classroom question: What is the purpose of using states in
-                    this application?</span
-                  >
+                  in there.
                 </li>
                 <li>
                   Did you notice that number of tries is malfunctioning as well?
@@ -88,13 +83,18 @@
                   previous task.
                 </li>
                 <li>
-                  Inside <code>DomManager.js</code>, a method called
-                  <code>showGameOver</code> is just lying around, waiting for
+                  Inside <code>DomManager.ts</code>, a method called
+                  <code>showGameOver()</code> is just lying around, waiting for
                   some love. Give it to it, gently, when appropriate ❤️ 😍
                 </li>
                 <li>
                   Print something in the GameOver panel based on GameManager
-                  state. Experiment! 🤓 👨🏻‍💻
+                  state. Experiment! 👨🏻‍💻
+                </li>
+                <li>
+                  Using the tab "Lighthouse" in chrome dev tools, generate a report for our small application.  <span class="question"
+                  >Classroom question: What improvements can be made to this application?</span
+                >
                 </li>
               </ol>
             </div>
@@ -109,21 +109,21 @@
           <div class="panel panel-info">
             <div class="panel-heading">
               <h3 class="panel-title">
-                <span class="glyphicon glyphicon-road"></span>&nbsp; Scoreboard
+                &#127942; &nbsp; Scoreboard
               </h3>
             </div>
 
             <div class="panel-body">
-              <div class="row">
+              <div class="row scoreboard">
                 <div class="col-sm-6">
                   Number of tiles matched:
                   <span id="current-number-of-tiles-matched">
-                    <!-- numberOfTilesMatched --></span
+                    &#128148; </span
                   >
                 </div>
                 <div class="col-sm-6">
                   Number of tries:
-                  <span id="number-of-tries">0</span>
+                  <span id="number-of-tries">&#128148;</span>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@
 
             <div class="panel-body">
               <div class="row">
-                <!--TODO: PUT GAME SCORE & TIMER STUFF HERE-->
+                <!--TODO: CREATE NEW HTML ELEMENTS FOR GAME SCORE & TIMER STUFF HERE-->
               </div>
             </div>
           </div>

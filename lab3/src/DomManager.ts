@@ -121,6 +121,7 @@ class DomManager {
 
     const gameOverEl = document.getElementById("game-over-panel");
     // Can you find this element in index.html? Maybe you need to add some stuff to it's body... ;)
+    // You can add text to an html element by using document.getElementById("foo").textContent = "foo bar";
 
     if (gameOverEl) {
       gameOverEl.style.display = "block";

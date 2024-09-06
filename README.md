@@ -12,10 +12,10 @@ Förkunskaper Det är fördelaktigt om man installerat Node i förväg. Detta g�
 
 Kursen är uppdelad i fyra delar. Varje del består av en teoridel och en laboration. Laborationerna kommer att spegla teoridelen. De fyra delarna är:
 
--   Webbens grunder
--   Kommunikation över HTTP & Javascript-moduler
--   Den moderna webben
--   Testning av webbprojekt
+- Webbens grunder
+- Kommunikation över HTTP & Javascript-moduler
+- Den moderna webben
+- Testning av webbprojekt
 
 ## Påbörja labbarna
 
@@ -23,9 +23,9 @@ Klona hem det här repot och öppna upp det i ditt favorit-kodverktyg. För varj
 
 ## Kursledare
 
--   Mathias Bergqvist (mathias.bergqvist@omegapoint.se)
--   Johan Lindholm (johan.lindholm@omegapoint.se)
--   Maryam Alizadeh (maryam.alizadeh@omegapoint.se)
+- Mathias Bergqvist (mathias.bergqvist@omegapoint.se)
+- Johan Lindholm (johan.lindholm@omegapoint.se)
+- Carina Wickström (carina.wickstrom@omegapoint.se)
 
 ## Vi skapade kursen!
 

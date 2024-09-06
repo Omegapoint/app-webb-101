@@ -1,42 +1,39 @@
 {
-    "name": "lab4",
-    "version": "1.0.0",
-    "description": "",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "jest --watch",
-        "test:coverage": "jest --watchAll --collect-coverage",
-        "dev": "webpack serve --mode=development",
-        "build": "webpack --mode=development",
-        "pack": "webpack"
-    },
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "@babel/preset-env": "^7.15.6",
-        "babel-loader": "^8.2.2",
-        "css-loader": "^6.3.0",
-        "html-webpack-plugin": "^5.3.2",
-        "path": "^0.12.7",
-        "style-loader": "^3.3.0",
-        "eslint": "^7.32.0",
-        "eslint-config-airbnb-base": "^14.2.1",
-        "eslint-plugin-import": "^2.24.2",
-        "jest": "^27.2.4",
-        "webpack": "^5.56.1",
-        "webpack-cli": "^4.8.0",
-        "webpack-dev-server": "^4.3.1"
-    },
-    "dependencies": {
-        "jquery": "^3.6.0",
-        "lodash": "^4.17.21"
-    },
-    "jest": {
-        "collectCoverage": true,
-        "collectCoverageFrom": [
-            "**/*.{js,}",
-            "!**/node_modules/**",
-            "!**/vendor/**"
-        ]
-    }
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "test:coverage": "jest --watchAll --collect-coverage",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=development",
+    "pack": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@types/jest": "^29.5.12",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "html-webpack-plugin": "^5.3.2",
+    "path": "^0.12.7",
+    "promise-polyfill": "^8.2.0",
+    "style-loader": "^3.3.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4",
+    "webpack": "^5.56.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.17.7",
+    "jest": "^29.0.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "source-map-loader": "^5.0.0",
+    "ts-loader": "^9.5.1"
+  }
 }

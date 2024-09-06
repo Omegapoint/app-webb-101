@@ -51,6 +51,10 @@ div {
     height: 160px;
 }
 
+.instructions {
+    font-size: 16px;
+}
+
 .instructions .question {
     color: #0e0c9b;
     font-family: 'Gloria Hallelujah', cursive;

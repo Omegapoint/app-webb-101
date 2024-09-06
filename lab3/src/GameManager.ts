@@ -2,7 +2,7 @@ import DomManager from "./DomManager";
 import MemoryBoard from "./MemoryBoard";
 import { NotifyAction, SCORE_STATE, GAME_STATE } from "./models";
 
-let gameTimer: NodeJS.Timer;
+let gameTimer: NodeJS.Timeout;
 let scoreState: SCORE_STATE = {
   timeElapsed: 0,
   numberOfTilesMatched: 0,

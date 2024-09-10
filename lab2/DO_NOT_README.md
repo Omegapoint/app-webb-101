@@ -16,7 +16,7 @@ import { getGiphyKittens } from "./api";
 
 ```javascript
 function performSearch(searchTerm = "") {
-    return getGiphyKittens(searchTerm);
+  return getGiphyKittens(searchTerm);
 }
 ```
 
@@ -24,15 +24,26 @@ function performSearch(searchTerm = "") {
 
 ```javascript
 export const getGiphyImages = (searchTerm = "") => {
-    const URL_TO_FETCH_WITH = `${GIPHY_BASE_SEARCH_URL}?q=${searchTerm}&limit=4&api_key=${GIPHY_API_KEY}`;
+  const URL_TO_FETCH_WITH = `${GIPHY_BASE_SEARCH_URL}?q=${searchTerm}&limit=4&api_key=${GIPHY_API_KEY}`;
 
-    return fetch(URL_TO_FETCH_WITH)
-        .then((result) => result.json())
-        .then((data) => convertGiphyResultToImageArray(data))
-        .catch((error) => console.error(`Error from fetching giphy images: ${error}`));
+  return fetch(URL_TO_FETCH_WITH)
+    .then((result) => result.json())
+    .then((data) => convertGiphyResultToImageArray(data))
+    .catch((error) =>
+      console.error(`Error from fetching giphy images: ${error}`)
+    );
 };
 
 function performSearch(searchTerm = "") {
-    return getGiphyImages(searchTerm);
+  return getGiphyImages(searchTerm);
 }
+```
+
+## Assignemnt 14
+
+```javascript
+import { removeCookie } from "./cookie.helpers";
+...
+...
+removeCookie("emoji-cookie");
 ```

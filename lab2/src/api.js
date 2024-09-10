@@ -37,6 +37,8 @@ export const getGiphyKittens = (searchTerm = "") => {
         console.error(`Error from fetching giphy images: ${error}`)
       );
   } else {
+    setCookie("emoji-cookie", "🍪", 7);
+    displayEmojiIfCookieSet();
     return new Promise((resolve, reject) =>
       reject(new Error(`A ${searchTerm} is not a kitten, stupid! 🤦‍♂️`))
     );

@@ -72,6 +72,10 @@
         display: flex;
         flex-direction: row;
       }
+
+      #emoji-container {
+        font-size: 50px;
+      }
     </style>
   </head>
 
@@ -99,6 +103,7 @@
               aria-describedby="basic-addon1"
             />
           </div>
+          <div id="emoji-container"></div>
         </div>
       </div>
       <hr />
@@ -179,6 +184,11 @@
                   Implement <code>getGiphyImages</code> in
                   <code>api.js</code> and use it instead of
                   <code>getGiphyKittens</code> when performing a search.
+                </li>
+                <li>
+                  What's up with the emoji popping up below the search bar?
+                  Find in the code base what causes it to appear and make it disappear
+                  programatically when you see fit. <span class="question">Is the emoji still there in new tabs? New windows? New incognito windows?</span>
                 </li>
                 <li>
                   Open up the developer tools in your browser and find the

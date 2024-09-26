@@ -3,7 +3,7 @@
 ## Assignment 7
 
 ```javascript
-function performSearch(searchTerm = "") {}
+const performSearch = (searchTerm = "") => {};
 ```
 
 ## Assignment 10
@@ -15,9 +15,9 @@ import { getGiphyKittens } from "./api";
 ## Assignment 11
 
 ```javascript
-function performSearch(searchTerm = "") {
+const performSearch = (searchTerm = "") => {
   return getGiphyKittens(searchTerm);
-}
+};
 ```
 
 ## Assignment 13

@@ -1,3 +1,4 @@
+import { setCookie, displayEmojiIfCookieSet } from "./cookie.helpers";
 /**
  *  Read more about giphy API here: https://github.com/Giphy/GiphyAPI
  *  TLDR: An API-key is a unique identifier that lets the API know who is asking. Some API's require them, some don't.

@@ -23,9 +23,8 @@ Klona hem det här repot och öppna upp det i ditt favorit-kodverktyg. För varj
 
 ## Kursledare
 
-- Mathias Bergqvist (mathias.bergqvist@omegapoint.se)
-- Johan Lindholm (johan.lindholm@omegapoint.se)
-- Carina Wickström (carina.wickstrom@omegapoint.se)
+- Maryam Alizadeh (maryam.alizadeh@omegapoint.se)
+- Fabian Ovik Karlsson (fabian.ovik-karlsson@omegapoint.se)
 
 ## Vi skapade kursen!
 

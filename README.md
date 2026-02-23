@@ -25,6 +25,7 @@ Klona hem det här repot och öppna upp det i ditt favorit-kodverktyg. För varj
 
 - Maryam Alizadeh (maryam.alizadeh@omegapoint.se)
 - Fabian Ovik Karlsson (fabian.ovik-karlsson@omegapoint.se)
+- Filippa Dahlgren Lidman (filippa.dahlgren-lidman@omegapoint.se)
 
 ## Vi skapade kursen!
 

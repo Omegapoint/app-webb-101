@@ -19,12 +19,12 @@ const convertGiphyResultToImageArray = (giphySearchResult = {}) => {
 /**
  * Giphy API credentials, do NOT edit.
  */
-const GIPHY_API_KEY = "iTnb2spITwi6D7KCV67oJLv7eQH8EITd";
+const GIPHY_API_KEY = "sPMDhd1HfuAWmJe1QLdSHC88ee0WoRAs";
 const GIPHY_BASE_SEARCH_URL = "http://api.giphy.com/v1/gifs/search";
 
 /**
- * Giphy specific search specificly designed for finding kitten gifs
- * @param term The search term. E.g 'puppy'
+ * Giphy specific search specifically designed for finding kitten gifs
+ * @param searchTerm The search term. E.g 'puppy'
  * @returns {Promise}
  */
 export const getGiphyKittens = (searchTerm = "") => {
@@ -49,7 +49,7 @@ export const getGiphyKittens = (searchTerm = "") => {
 /**
  * Giphy specific search.
  * This is the function we want you to implement.
- * @param term The search term. E.g 'puppy'
+ * @param searchTerm The search term. E.g 'puppy'
  * @returns {Promise}
  */
 export const getGiphyImages = (searchTerm = "") => {};

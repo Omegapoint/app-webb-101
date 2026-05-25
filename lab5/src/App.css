@@ -1,0 +1,90 @@
+div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#game-over-panel {
+    display: none;
+}
+
+.card {
+    height: 160px;
+    width: 160px;
+    position: relative;
+    /*-webkit-box-shadow: 9px 10px 11px -4px rgba(0,0,0,0.62);*/
+    /*-moz-box-shadow: 9px 10px 11px -4px rgba(0,0,0,0.62);*/
+    /*box-shadow: 9px 10px 11px -4px rgba(0,0,0,0.62);*/
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card.selected .img-container {
+    z-index: 10;
+}
+
+.card.found .img-container {
+    z-index: 10;
+}
+
+.card> :first-child {
+    z-index: 2;
+    background-color: #bebebe;
+    border: 2px solid black;
+}
+
+.card> :last-child {
+    z-index: 1;
+}
+
+.card>div {
+    position: absolute;
+    height: 160px;
+    width: 160px;
+}
+
+.img-container img {
+    width: 160px;
+    height: 160px;
+}
+
+.instructions {
+    font-size: 16px;
+}
+
+.instructions .question {
+    color: #0e0c9b;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.instructions code {
+    font-family: 'Cutive Mono', monospace;
+    background: #232323;
+    color: white;
+}
+
+.lab-footer {
+    padding: 4rem 0;
+    margin-top: 4rem;
+    font-size: 85%;
+    text-align: center;
+    background-color: #f7f7f7
+}
+
+.lab-footer a {
+    font-weight: 500;
+    color: #464a4c
+}
+
+.lab-footer a:hover {
+    color: #0275d8
+}
+
+.lab-footer p {
+    margin-bottom: 0
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
